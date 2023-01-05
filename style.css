@@ -4,7 +4,9 @@
     background-color: black;
     }
     section.Art_gallery_by_varsha {
-        margin: 0 30px;
+        margin: 0 auto;
+        max-width: 1400px;
+    
     }
     
 h1 {
