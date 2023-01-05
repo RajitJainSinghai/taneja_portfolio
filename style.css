@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    }
+    section.Art_gallery_by_varsha {
+        margin: 0 30px;
+    }
+    
+h1 {
+    font-family: "dream avenue";
+}
+p,h2,h3,h4,h5,li,ul {
+    font-family: "tt drugs";
+}
+.sam_01, .sam_02, .sam_04{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.sam_inner_images, .sam_text_01,.sam_text_02,.sam_inner_images_canvas {
+    position: relative;
+    width: 45%;
+}
+
+img.face_gallery {
+    width: 420px;
+    margin: 15px;
+    border-radius: 5px;
+
+}
+img.lotus_sclupture {
+    position: absolute;
+    width: 200px;
+    bottom: 50px;
+    right: 30px;
+    border: 1px solid #ffffff61;
+    border-radius: 5px;
+}
+
+/********first text*************************/
+
+
+h1.sam_name, p.sam_para,h3.gettoknow,.sam_text_02,.sam_03 {
+    color: white;
+}
+h1.sam_name,h1.sam_name_canvas {
+    font-size: 140px;
+    line-height: 120px;
+    font-weight: 100;
+    margin-top: 50px;
+}
+.sam_text_01 {
+    display: flex;
+    justify-content: center;
+}
+p.sam_para {
+    position: absolute;
+    bottom: 150px;
+    width: 335px;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 200;
+    display: flex;
+    left: 10%;
+}
+
+h3.gettoknow {
+    position: absolute;
+    bottom: 30px;
+    left: 20%;
+    border: 3px solid white;
+    padding: 10px 35px;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+}
+
+/*************my canvas******************/
+h1.sam_name_canvas {
+    font-size: 100px;
+}
+h3.gettoknow_canvas {
+    font-size: 25px;
+    font-weight: 300;
+    width: 300px;
+    letter-spacing: 3px;
+    color: #98becb;
+}
+p.sam_para_canvas {
+    text-align: initial;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: 200;
+    width: 340px;
+}
+img.face_gallery_canvas {
+    width: 460px;
+    border-radius: 50% 50% 5px 5px;
+}
+.sam_inner_images_canvas {
+    display: flex;
+    justify-content: center;
+}
+.sam_02 {
+    margin-top: 50px;
+}
+.sam_02 {
+    margin-top: 50px;
+}
+
+/**************my journey*****************************/
+.sam_03 {
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+ul.ul_my_journey {
+    width: 400px;
+}
+
+.center_my_journey {
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: baseline;
+    line-height: 50px;
+}
+h1.sam_name_myjourney {
+    font-size: 100px;
+    color: white;
+    font-weight: 100;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+h3.gettoknow_myjourney {
+    font-size: 23px;
+    font-weight: 600;
+}
+.sam_inner_images_myjourney {
+    display: flex;
+    justify-content: center;
+}
+.sam_simple_works {
+    width: 100%;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+}
+img.simple_painting {
+    width: 390px;
+    border: 1px solid white;
+
+}
+
+h4.simple_painting_heading, p.dimensions, p.concepts,p.years{
+    font-size: 20px;
+    font-weight: 100;
+    border-bottom: 1px solid;
+    padding: 10px 1px;
+    font-weight: 300;
+}
+h4.simple_painting_heading {
+    text-transform: uppercase;
+    font-size: 30px;
+    border-bottom: 1px solid;
+    padding-bottom: 5px;
+    font-family: "dream avenue";
+    font-weight: 100;
+    letter-spacing: 4px;
+    margin: 10px;
+
+}
+
+
+/****************Blooming*********************************/
+.sam_04 {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+}
+img.face_gallery_blooming {
+    width: 560px;
+}
+img.simple_painting_butterfly {
+    width: 500px;
+    border-radius: 50% 50% 5px 5px;
+}
+.sam_painting_1 {
+    color: white;
+}
+
+
+/*************** Emotion*************************/
+.sam_05 {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 60px;
+}
+img.face_gallery_emotions {
+    width: 600px;
+}
+h1.simple_painting_heading_emotions {
+    font-size: 50px;
+    font-weight: 100;
+    width: 600px;
+    text-align: left;
+    letter-spacing: 3px;
+}
+
+/************** Commisions**************/
+.sam_06,.sam_07 {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin-top: 60px;
+    align-items: center;
+
+}
+.sam_painting_commisions {
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+h1.simple_painting_heading_commisions {
+    font-size: 35px;
+    font-weight: 100;
+}
+p.sam_para_commisions {
+    margin-top: 30px;
+    letter-spacing: 2px;
+    font-size: 14px;
+    font-weight: 200;
+    width: 350px;
+    margin: 30px auto;
+    text-align: initial;
+}
+
+/***** Timelines***********/
+img.face_gallery_timelines_double {
+    width: 700px;
+}
+img.face_gallery_timelines {
+    width: 520px;
+    border-radius: 50% 50% 5px 5px;
+
+}
+.sam_07 {
+    align-items: flex-start;
+}
+
+.sam_double_pics {
+    color: white;
+    text-align: left;
+}
+p.sam_para_timeline {
+    margin-top: 30px;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 200;
+    width: 550px;
+    /* margin: 30px auto; */
+    text-align: left;
+}
+/******* Contact me ************/
+.sam_08 {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+
+h1.sam_name_08 {
+    color: white;
+    font-size: 80px;
+    font-weight: 100;
+}
+form {
+    width: 400px;
+}
+label {
+    font-size: 18px;
+    color: white;
+    margin-right: 20px;
+
+}
+.label_before_div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+input[type="text"] {
+    font-size: 18px;
+    border: 1px solid #ffffff52;
+    padding: 5px;
+    color: white;
+}
+input[type="submit"] {
+    font-size: 18px;
+    color: white;
+    padding: 5px 15px;
+    border: 1px solid #ffffff75;
+}
+img.lotus_sclupture_1 {
+    position: absolute;
+    width: 400px;
+    bottom: 30px;
+    left: -135px;
+    border: 1px solid #ffffff61;
+    border-radius: 50% 50% 5px 5px;
+    height: 400px;
+
+}
+.sam_inner_images_contactus {
+    width: 45%;
+    position: relative;
+    justify-content: end;
+    display: flex;
+}
+
+
