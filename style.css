@@ -38,20 +38,20 @@ p,h2,h3,h4,h5,li,ul {
 
 .sam_inner_images, .sam_text_01,.sam_text_02,.sam_inner_images_canvas {
     position: relative;
-    width: 45%;
+    width: 550px;
 }
 
 img.face_gallery {
-    width: 420px;
+    width: 75%;
     margin: 15px;
     border-radius: 5px;
 
 }
 img.lotus_sclupture {
     position: absolute;
-    width: 200px;
+    width: 40%;
     bottom: 50px;
-    right: 30px;
+    right: 6px;
     border: 1px solid #ffffff61;
     border-radius: 5px;
 }
@@ -219,6 +219,8 @@ img.simple_painting_butterfly {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 60px;
+    flex-wrap: wrap-reverse;
+
 }
 img.face_gallery_emotions {
     width: 600px;
@@ -238,6 +240,7 @@ h1.simple_painting_heading_emotions {
     justify-content: space-evenly;
     margin-top: 60px;
     align-items: center;
+
 
 }
 .sam_painting_commisions {
@@ -292,6 +295,7 @@ p.sam_para_timeline {
     width: 100%;
     align-items: flex-start;
     margin-top: 60px;
+    flex-wrap: wrap-reverse;
 }
 
 h1.sam_name_08 {
@@ -342,4 +346,139 @@ img.lotus_sclupture_1 {
     display: flex;
 }
 
-
+@media screen and (max-width: 1200px) {
+    h1.sam_name {
+        margin-bottom: 40px;
+    }
+    .sam_01, .sam_02, .sam_04 {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    p.sam_para {
+        /* position: absolute;
+        bottom: -60px; */
+        width: 100%;
+        letter-spacing: 2px;
+        font-size: 13px;
+        font-weight: 200;
+        display: flex;
+        left: 15px;
+        position: absolute;
+        bottom: 0;
+    }
+    h1.sam_name {
+        margin-bottom: 80px;
+        font-size: 80px;
+        width: 100%;
+        margin-top: 0;
+    }
+    .sam_02 {
+        margin-top: 150px;
+        flex-wrap: wrap-reverse;
+    
+    }
+    .sam_text_01 {
+        display: grid;
+        place-content: center;
+    }
+    h3.gettoknow {
+        position: absolute;
+        bottom: -80px;
+        left: 30%;
+        border: 3px solid white;
+        padding: 10px 35px;
+        border-radius: 50%;
+        text-align: center;
+        font-weight: 100;
+        font-size: 15px;
+    }
+    p.sam_para_canvas, h3.gettoknow_canvas {
+        width: 540px;
+    }
+    img.face_gallery_canvas {
+        width: 600px;
+    }
+    h1.sam_name_myjourney {
+        text-align: center;
+    }
+    .sam_03 {
+        flex-wrap: wrap;
+    }
+    
+    .center_my_journey {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: baseline;
+        line-height: 50px;
+        margin-left: 40px;
+    }
+    .sam_simple_works {
+        width: 100%;
+        display: flex;
+        color: white;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .sam_painting_1 {
+        margin: 20px 10px;
+    }
+    h1.simple_painting_heading_emotions {
+        font-size: 40px;
+    }
+    .sam_06, .sam_07 {
+        display: flex;
+        width: 100%;
+        justify-content: space-evenly;
+        margin-top: 0px;
+        align-items: center;
+        flex-wrap: wrap-reverse;
+}
+img.face_gallery_timelines_double {
+    width: 500px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.sam_inner_images_canvas {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+img.face_gallery_timelines {
+    width: 500px;
+    border-radius: 50% 50% 15px 15px;
+    margin-left: -45px;
+}
+.sam_inner_images_contactus {
+    width: 640px;
+}
+img.lotus_sclupture_1 {
+    position: absolute;
+    width: 60%;
+    bottom: 30px;
+    left: -35px;
+    border: 1px solid #ffffff61;
+    border-radius: 50% 50% 5px 5px;
+    height: 320px;
+}
+.sam_text_08 {
+    width: 100%;
+    /* margin: 0 auto; */
+    display: grid;
+    place-content: center;
+}
+input[type="text"] {
+    font-size: 18px;
+    border: 1px solid #ffffff52;
+    padding: 10px 14px;
+    color: white;
+    width: 270px;
+}
+}
+@media screen and (max-width: 600px) {
+    img.face_gallery_canvas {
+        width: 300px;
+    }
+}
