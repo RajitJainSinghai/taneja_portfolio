@@ -345,7 +345,9 @@ img.lotus_sclupture_1 {
     justify-content: end;
     display: flex;
 }
-
+.sam_text_08 {
+    width: 50%;
+}
 @media screen and (max-width: 1200px) {
     h1.sam_name {
         margin-bottom: 40px;
