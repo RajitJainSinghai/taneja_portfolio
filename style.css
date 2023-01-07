@@ -3,7 +3,11 @@
     padding: 0;
     background-color: black;
     }
-  
+    @font-face{
+        font-family: 'Dream-Avenue';
+        src: url("./FontsFree-Net-Dream-Avenue.ttf");
+       }
+
     section.Art_gallery_by_varsha {
         margin: 0 auto;
         max-width: 1400px;
@@ -12,7 +16,7 @@
     }
     
 h1 {
-    font-family: "ALEGREYA SANS 700";
+    font-family: "dream avenue";
 }
 p,h2,h3,h4,h5,li,ul {
     font-family: "tt drugs";
