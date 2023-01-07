@@ -3,6 +3,13 @@
     padding: 0;
     background-color: black;
     }
+    /* @font-face {
+        font-family: 'Dream-Avenue';
+        src: url("https://varshataneja.netlify.app/Dream-Avenue.eot");
+        src: url("https://varshataneja.netlify.app/Dream-Avenue.woff") format("woff"),
+        url("https://varshataneja.netlify.app/Dream-Avenue.otf") format("opentype"),
+        url("https://varshataneja.netlify.app/Dream-Avenue.svg#filename") format("svg");
+        } */
     @font-face{
         font-family: 'Dream-Avenue';
         src: url("./FontsFree-Net-Dream-Avenue.ttf");
