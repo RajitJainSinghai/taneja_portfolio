@@ -12,7 +12,7 @@
         } */
     @font-face{
         font-family: 'Dream-Avenue';
-        src: url("./FontsFree-Net-Dream-Avenue.ttf") format("truetype");
+        src: url("./Dream-Avenue.ttf") format("truetype");
        }
 
     section.Art_gallery_by_varsha {
@@ -23,7 +23,7 @@
     }
     
 h1 {
-    font-family: "dream avenue";
+    font-family: "Dream-Avenue";
 }
 p,h2,h3,h4,h5,li,ul {
     font-family: "tt drugs";
