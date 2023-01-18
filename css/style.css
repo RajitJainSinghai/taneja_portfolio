@@ -625,6 +625,11 @@ input[type="text"] {
     h4.simple_painting_heading {
         margin: 0;
     }
+    h1.sam_name_myjourney {
+        margin-top: 20px;
+    }
+    
+    
     img.face_gallery_emotions, img.simple_painting, img.face_gallery_commision,  p.sam_para_canvas, h3.gettoknow_canvas,  img.simple_painting_butterfly, img.face_gallery_canvas, img.face_gallery_timelines, img.face_gallery_blooming, img.face_gallery_timelines_double {
         width: 100%;
     } 
