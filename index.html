@@ -3,20 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./css/header.css" />
+        <link rel="stylesheet" href="./css/style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Varsha Taneja Art Gallery</title>
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ALEGREYA SANS 700">
      <link rel="fonts" href="./FontsFree-Net-Dream-Avenue.ttf">
-        <link rel="stylesheet" href="./style.css" />
+        
+
   </head>
   <body>
-    <!-- <header class="header">
-      <h1 class="sam_name">VARSHA <br></BR> TANEJA</h1>
-
-      <div class="navbar">
-
+    <nav>
+      <div class="logo">
+         <a href=""><img id="logoImg" src="./img/logo1.png" alt="Logo Image"></a> 
       </div>
-    </header> -->
+      <div class="hamburger">
+          <div class="bars1"></div>
+          <div class="bars2"></div>
+          <div class="bars3"></div>
+      </div>
+      <ul class="nav-links">
+          <li><a href="#">HTML & CSS</a></li>
+          <li><a href="#">WordPress</a></li>
+          <li><a href="#">Javascript</a></li>
+          <li><a href="#">JQuery</a></li>
+          
+      </ul>
+  </nav>
+  <script src="javascript/script.js"></script>
     <section class="Art_gallery_by_varsha">
       <!-- 1 -->
       <div class="sam_01">
@@ -57,7 +71,7 @@
         </p>
     </div>
     <div class="sam_inner_images_canvas">
-      <img class="face_gallery_canvas" src="./img/eye.jpg" alt="">
+      <img class="face_gallery_canvas" src="./img/eye.png" alt="">
   </div>
       </div>
 
@@ -125,7 +139,7 @@
  <div class="sam_04">
  
   <div class="sam_inner_images_canvas">
-    <img class="face_gallery_blooming" src="./img/sclupture_face_2.jpg" alt="">
+    <img class="face_gallery_blooming" src="./img/sclupture_face_2.png" alt="">
 </div>
 <div class="sam_painting_1">
   <img class="simple_painting_butterfly" src="./img/butterfly.png" alt="">
@@ -143,7 +157,7 @@
     <h1 class="simple_painting_heading_emotions">EVERYTHING IS EMOTION,TO HAVE SOMEONE ELSE FEEL THE SAME AS I DO IS A TINY MIRACLE.</h1>
   </div>
   <div class="sam_inner_images_canvas">
-    <img class="face_gallery_emotions" src="./img/blue_butterfly_single_heart.jpg" alt="">
+    <img class="face_gallery_emotions" src="./img/blue_butterfly_single_heart.png" alt="">
 </div>
 
     </div>
@@ -175,7 +189,7 @@
         <!-- 8 -->
         <div class="sam_07">
         <div class="sam_double_pics">
-          <img class="face_gallery_timelines_double" src="./img/double_heart.jpg" alt="">
+          <img class="face_gallery_timelines_double" src="./img/double_heart.png" alt="">
           <h1 class="simple_painting_heading_commisions">TIMELINE</h1>
 
           <p class="sam_para_timeline">Pricing and timeline will also depend on the
@@ -185,7 +199,7 @@
 
         </div>
         <div class="sam_inner_images_canvas">
-          <img class="face_gallery_timelines" src="./img/face_with_heart.jpg" alt="">
+          <img class="face_gallery_timelines" src="./img/face_with_heart.png" alt="">
       </div>
       </div>
 
@@ -198,13 +212,13 @@
           <form action="/thankyou.html">
             <div class="label_before_div">
             <label for="fname">ADDRESS</label>
-            <input type="text" id="" name="name" placeholder="45, street dalal newyork"></div> <br>
+            <input type="text" id="" name="name" placeholder="45, street dalal newyork" required></div> <br>
             <div class="label_before_div">
             <label for="lname">PHONE</label>
-            <input type="text" id="address" name="phone" placeholder="123456789"></div> <br>
+            <input type="text" id="address" name="phone" placeholder="123456789" required></div> <br>
             <div class="label_before_div">
             <label for="lname">EMAIL</label>
-            <input type="text" id="address" name="email" placeholder="abc@gmail.com"></div> <br>
+            <input type="text" id="address" name="email" placeholder="abc@gmail.com" required></div> <br>
             <div class="label_before_div">
             <input type="submit" value="Submit">
           </div>
