@@ -618,14 +618,14 @@ input[type="text"] {
         border-radius: 50% 50% 30px 30px;
         height: 245px;
     }
-    
-    
-    
+    li.li_my_journey {
+        line-height: 30px;
+        text-align:left;
+    }
+    h4.simple_painting_heading {
+        margin: 0;
+    }
     img.face_gallery_emotions, img.simple_painting, img.face_gallery_commision,  p.sam_para_canvas, h3.gettoknow_canvas,  img.simple_painting_butterfly, img.face_gallery_canvas, img.face_gallery_timelines, img.face_gallery_blooming, img.face_gallery_timelines_double {
         width: 100%;
-    }
-
-    
-    
-    
+    } 
 }
