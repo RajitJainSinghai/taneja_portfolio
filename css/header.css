@@ -123,6 +123,10 @@ a#social_links img {
 /*Responsive Adding Media Queries*/
 
 @media screen and (max-width: 800px){
+    li.social_icons_varsha.fade {
+        background: none;
+        text-align: center;
+    }
     nav{
         position: fixed;
         z-index: 3;
