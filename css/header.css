@@ -51,6 +51,9 @@ img#logoImg {
     text-transform: uppercase;
     list-style: none;
     font-weight: 600;
+    /* margin-top: 55px; */
+
+
 }
 
 .nav-links li a{
@@ -64,14 +67,18 @@ img#logoImg {
     text-transform: math-auto;
 
 }
+span#image_shadows strong {
+    background: none;
+}
 
-.nav-links li a:hover{
-    color:#000;
+a#navbar_anker:hover{
+    color:rgb(0, 0, 0);
     background-color: #fff;
-    padding: 10px;
+    padding: 1px;
     border-radius: 50px;
     font-family: "Dream-Avenue";
 }
+
 
 .nav-links li{
     position:relative;
@@ -99,6 +106,18 @@ img#logoImg {
 .hamburger{
     display: none;
 }
+li.social_icons_varsha {
+    width: 180px;
+}
+a#social_links {
+    padding: 0;
+    margin: 4px;
+}
+a#social_links img {
+    width: 25px;
+}
+
+
 
 
 /*Responsive Adding Media Queries*/
@@ -185,4 +204,21 @@ img#logoImg {
             transform: rotate(45deg) translate(-5px, -6px);
         }
 
+}
+nav#varsha_navbar {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 80px;
+}
+a#navbar_anker {
+    color: white;
+    height: 20px;
+
+}
+span {
+    background: none;
 }
