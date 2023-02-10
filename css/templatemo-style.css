@@ -527,6 +527,7 @@ figure.effect-sadie:hover p {
     display: block;
     max-width: 100%;
     opacity: 0.8;
+	padding: 10px 0;
 }
 
 .cd-hero-slider h2 { font-size: 1.5em; }
