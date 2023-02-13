@@ -2,31 +2,27 @@
     font-family: 'Dream-Avenue';
     src: url("../Dream-Avenue.ttf") format("truetype");
    }
-
-  
-    
-   
-
+* {
+    margin: 0;
+    padding: 0;
+}
 nav{
     height: 4rem;
     width: 100%;
     display: flex;
     position: fixed;
     z-index: 10;
-    background-color: #053742;
+    background-color: #000000;
     box-shadow: 0 3px 20px rgba(0,0,0,0.2);
     top: 0;
 }
 img#logoImg {
     border-radius: 50%;
-    width: 150px;
+    width: 100px;
     position: absolute;
-    top: -18px;
-    left: -12px;
-
+    top: 0;
+    left: 0;
 }
-
-
 /* Styling Logo*/
 
 .logo{
@@ -107,7 +103,7 @@ a#navbar_anker:hover{
     display: none;
 }
 li.social_icons_varsha {
-    width: 180px;
+    width: 200px;
 }
 a#social_links {
     padding: 0;
