@@ -130,6 +130,9 @@ a#social_links img {
     }
     .logo {
         width: 100%;
+        width: 100%;
+        background: black;
+        z-index: 1
     }
     .hamburger{
         display:block;
