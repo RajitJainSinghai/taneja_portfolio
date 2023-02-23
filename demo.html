@@ -1,56 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <link rel="stylesheet" href="./css/header.css" />
-        <link rel="stylesheet" href="./css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Varsha Taneja Art Gallery</title>
- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ALEGREYA SANS 700">
-     <link rel="fonts" href="./FontsFree-Net-Dream-Avenue.ttf">
-  </head>
-  <body>
-    <nav>
-      <div class="logo">
-         <a href=""><img id="logoImg" src="./img/logo1.png" alt="Logo Image"></a> 
-      </div>
-      <div class="hamburger">
-          <div class="bars1"></div>
-          <div class="bars2"></div>
-          <div class="bars3"></div>
-      </div>
-      <ul class="nav-links">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li><a href="./index-color.html">GALLERY</a></li>
-          <li><a href="#">CONTACT US</a></li>
-          
-      </ul>
-  </nav>
-  <script src="javascript/script.js"></script>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
 
-  <section class="varsh's_gallery">
-<ul class="gallery_view">
-    <li id="images_views">
-        <img class="image_grids" src="./img/Picture_1.png" alt="">
-        <p class="discription_img">123cm x 134cm</p>
-    </li>
-    <li id="images_views">
-        <img class="image_grids" src="./img/Picture_1.png" alt="">
-        <p class="discription_img">123cm x 134cm</p>
-    </li>
-    <li id="images_views">
-        <img class="image_grids" src="./img/Picture_1.png" alt="">
-        <p class="discription_img">123cm x 134cm</p>
-    </li>
-    <li id="images_views">
-        <img class="image_grids" src="./img/Picture_1.png" alt="">
-        <p class="discription_img">123cm x 134cm</p>
-    </li>
-    <li id="images_views">
-        <img class="image_grids" src="./img/Picture_1.png" alt="">
-        <p class="discription_img">123cm x 134cm</p>
-    </li>
-</ul>
-  </section>
+<div id="category_modal">
+  <img src="./img/Bronze_award_1.png" style="width:30%;cursor:zoom-in"
+  onclick="document.getElementById('modal01').style.display='block'">
+  <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="./img/Bronze_award_1.png" style="width:100%">
+    </div>
+  </div>
+</div>
+
+<div id="category_modal">
+  <img src="./img/exibition_1.jpg" style="width:30%;cursor:zoom-in"
+  onclick="document.getElementById('modal02').style.display='block'">
+  <div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="./img/exibition_1.jpg" style="width:100%">
+    </div>
+  </div>
+</div>
+
+<div id="category_modal">
+  <img src="./img/exibition_11.jpg" style="width:30%;cursor:zoom-in"
+  onclick="document.getElementById('modal03').style.display='block'">
+  <div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+    <div class="w3-modal-content w3-animate-zoom">
+      <img src="./img/exibition_11.jpg" style="width:100%">
+    </div>
+  </div>
+</div>
+            
+</body>
+</html>

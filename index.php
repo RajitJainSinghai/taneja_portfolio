@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="./css/header.css" />
         <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/gallery.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Varsha Taneja Art Gallery</title>
  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ALEGREYA SANS 700">
@@ -13,7 +15,14 @@
 
   </head>
   <body>
+      <script src="./javascript/gallery.js"></script>  
   <?php include 'header.php';?>
+
+  <!-- /*********** Preloader ******************/ -->
+  <?php include 'preloader.php';?>
+  <!-- /***********End Preloader ******************/ -->
+
+
   
   <script src="javascript/script.js"></script>
     <section class="Art_gallery_by_varsha">

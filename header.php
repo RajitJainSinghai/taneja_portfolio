@@ -8,7 +8,7 @@
     <title>Document</title>
 </head>
 <body>
-<nav>
+<nav class='taneja_header'>
       <div class="logo">
          <a href=""><img id="logoImg" src="./img/logo1.png" alt="Logo Image"></a> 
       </div>
@@ -18,9 +18,9 @@
           <div class="bars3"></div>
       </div>
       <ul class="nav-links">
-          <li><a href="#">HOME</a></li>
+          <li><a href="./index.php">HOME</a></li>
           <li><a href="#">ABOUT US</a></li>
-          <li><a href="./index-color.html">GALLERY</a></li>
+          <li><a href="./gallery.php">GALLERY</a></li>
           <li><a href="#">CONTACT US</a></li>
           <li class="social_icons_varsha">
             <a id="social_links" target="_blank" href="https://www.facebook.com/mystrokz/"><img src="./img/facebook.png" alt=""></a>
