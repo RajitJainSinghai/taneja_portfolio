@@ -23,261 +23,88 @@
 
 
 <div id="myBtnContainer">
-<?php 
-$stmt=$conn->prepare("SELECT * FROM `category` where status='p'");
-$stmt->execute();
-?>
+      <?php 
+      $stmt=$conn->prepare("SELECT * FROM `category` where status='p'");
+      $stmt->execute();
+      ?>
 
-<?php 
-while($arr=$stmt->fetch(PDO::FETCH_ASSOC))
-{
-?>
+      <?php 
+      while($arr=$stmt->fetch(PDO::FETCH_ASSOC))
+      {
+      ?>
 
-<button class="js-click" onclick="filterSelection('<?php echo($arr['category_name']);?>')"> <?php echo($arr['category_name']);?> </button>
+      <a style="text-decoration:none;" href="#<?php echo $arr['category_name'];?>" id="<?php echo $arr['category_name'];?>"  onfocus="filterSelection('<?php echo $arr['category_name'];?>')"> <p class="js-click"><?php echo($arr['category_name']);?><p> </a>
 
-<?php
-}
-?>
-    <!-- <button class="js-click" onclick="filterSelection('all')"> Show all</button> -->
-    <!-- <button class="js-click" onclick="filterSelection('Florals')">Florals</button> -->
-    <!-- <button class="js-click" onclick="filterSelection('Spirituals')"> Spiritual</button>
-    <button class="js-click" onclick="filterSelection('Portraits')"> Portraits</button>
-    <button class="js-click" onclick="filterSelection('Dog portraits')">Dog portrait</button>
-      <button class="js-click" onclick="filterSelection('Landscapes')">Landscape</button>
-      <button class="js-click" onclick="filterSelection('Conceptuals')"> Conceptual</button>
-      <button class="js-click" onclick="filterSelection('cWall paintings')">Wall painting(above 50 cms)</button>
-      <button class="js-click" onclick="filterSelection('Home-Decors')">Home-Decor products</button>
-      <button class="js-click" onclick="filterSelection('Jewellerys')">Jewellery</button>
-      <button class="js-click" onclick="filterSelection('Jharokhas')">Jharokha </button> -->
-  </div>
-<!-- <section class="category_result"> -->
-<!-- /****************** Florals*******************/ -->
- <div  class="filterDiv Florals">
- <span id="category_results">
+      <?php
+      }
+      ?>
+          
+</div>
+ 
 
-<div id="categories_hub">
-  <img id="category-img" src="./img/Florals/floral_2.webp" onclick="document.getElementById('Florals-2').style.display='block'">
-  <div id="Florals-2" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="./img/Florals/floral_2.webp" >
-    </div>
-  </div>
-</div>
+  <?php 
+      $sad1=$conn->prepare("SELECT * FROM `category` where status='p' order by serial asc");
+      $sad1->execute();
+      $i = 1;
+      while($sad=$sad1->fetch(PDO::FETCH_ASSOC))
+      {
+        $cat =$sad['category_name'];
+     
+ $pat1=$conn->prepare("SELECT * FROM `image_details` where status='p' and category_name='$cat' order by serial desc");
+      $pat1->execute();
+      $i = 0;
+      while($pat=$pat1->fetch(PDO::FETCH_ASSOC))
+      {
+ 
+ ?>
+ 
 
-<div id="categories_hub">
-  <img id="category-img" src="./img/Florals/floral_3.webp" onclick="document.getElementById('Florals-3').style.display='block'">
-  <div id="Florals-3" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="./img/Florals/floral_3.webp" >
-    </div>
-  </div>
-</div>
-
-<div id="categories_hub">
-  <img id="category-img" src="./img/Florals/floral_4.webp" onclick="document.getElementById('Florals-4').style.display='block'">
-  <div id="Florals-4" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="./img/Florals/floral_4.webp" >
-    </div>
-  </div>
-</div>
-<div id="categories_hub">
-  <img id="category-img" src="./img/Florals/floral_5.webp" onclick="document.getElementById('Florals-5').style.display='block'">
-  <div id="Florals-5" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="./img/Florals/floral_5.webp" >
-    </div>
-  </div>
-</div>
-<div id="categories_hub">
-  <img id="category-img" src="./img/Florals/floral_6.webp" onclick="document.getElementById('Florals-6').style.display='block'">
-  <div id="Florals-6" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="./img/Florals/floral_6.webp" >
-    </div>
-  </div>
-</div>
-<div id="categories_hub">
-  <img id="category-img" src="./img/Florals/floral_7.webp" onclick="document.getElementById('Florals-7').style.display='block'">
-  <div id="Florals-7" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="./img/Florals/floral_7.webp" >
-    </div>
-  </div>
-</div>
-<div id="categories_hub">
-  <img id="category-img" src="./img/Florals/floral_8.webp" onclick="document.getElementById('Florals-8').style.display='block'">
-  <div id="Florals-8" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="./img/Florals/floral_8.webp" >
-    </div>
-  </div>
-</div>
-<div id="categories_hub">
-  <img id="category-img" src="./img/Florals/floral_9.webp" onclick="document.getElementById('Florals-9').style.display='block'">
-  <div id="Florals-9" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="./img/Florals/floral_9.webp" >
-    </div>
-  </div>
-</div>
-<div id="categories_hub">
-  <img id="category-img" src="./img/Florals/floral_10.webp" onclick="document.getElementById('Florals-10').style.display='block'">
-  <div id="Florals-10" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="./img/Florals/floral_10.webp" >
-    </div>
-  </div>
-</div>
-<div id="categories_hub">
-  <img id="category-img" src="./img/Florals/floral_11.webp" onclick="document.getElementById('Florals-11').style.display='block'">
-  <div id="Florals-11" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="./img/Florals/floral_11.webp" >
-    </div>
-  </div>
-</div>
-<div id="categories_hub">
-  <img id="category-img" src="./img/Florals/floral_12.webp" onclick="document.getElementById('Florals-12').style.display='block'">
-  <div id="Florals-12" class="w3-modal" onclick="this.style.display='none'">
-    <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-    <div class="w3-modal-content w3-animate-zoom">
-      <img src="./img/Florals/floral_12.webp" >
-    </div>
-  </div>
-</div>
-
-</span>
- </div>
-
-
-<!-- /************** Spirituals******************/ -->
-    <div class="filterDiv Spirituals">
-      <span id="category_results">
-      <div id="categories_hub">
-      <img id="category-img" src="./img/Spiritual/spiritual_9.webp" onclick="document.getElementById('Spiritual-9').style.display='block'">
+<div class="filterDiv <?php echo $cat;?>">
+       <span id="category_results">
+       <div id="categories_hub">
+      <img id="category-img" src="admin/images/portfolio/<?php echo $pat['image_name']; ?>" onclick="document.getElementById('<?php echo $pat['id']; ?>').style.display='block'">
       <div class="painting_details">
-    <p class="painting_title">Dreaming buddha</p>
-    <p class="painting_medium">This pose exudes a state of total relaxation and transquillity, and signifies the restfulness and calm that one can attain thorough the practice of meditation.</p>
-    <p class="painting_sizing">4'/6' feets</p>
+    <p class="painting_title"><?php echo $pat['title']; ?></p>
+    <p class="painting_medium"><?php echo $pat['image_medium']; ?></p>
+    <p class="painting_sizing"><?php echo $pat['image_size']; ?></p>
   </div>
-      <div id="Spiritual-9" class="w3-modal" onclick="this.style.display='none'">
+      <div id="<?php echo $pat['id']; ?>" class="w3-modal" onclick="this.style.display='none'">
         <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
         <div class="w3-modal-content w3-animate-zoom">
-          <img src="./img/Spiritual/spiritual_9.webp">
+          <img src="admin/images/portfolio/<?php echo $pat['image_name']; ?>">
           <div class="painting_details">
-    <p class="painting_title">Dreaming buddha</p>
-    <p class="painting_medium">This pose exudes a state of total relaxation and transquillity, and signifies the restfulness and calm that one can attain thorough the practice of meditation.</p>
-    <p class="painting_sizing">4'/6' feets</p>
+          <p class="painting_title"><?php echo $pat['title']; ?></p>
+    <p class="painting_medium"><?php echo $pat['image_medium']; ?></p>
+    <p class="painting_sizing"><?php echo $pat['image_size']; ?></p>
   </div>
         </div>
       </div>
     </div>
+<?php } } ?>
 
-    <div id="categories_hub">
-      <img id="category-img" src="./img/Spiritual/spiritual_2.webp" onclick="document.getElementById('Spiritual-2').style.display='block'">
-      <div id="Spiritual-2" class="w3-modal" onclick="this.style.display='none'">
-        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-        <div class="w3-modal-content w3-animate-zoom">
-          <img src="./img/Spiritual/spiritual_2.webp">
-        </div>
-      </div>
-    </div>
-    <div id="categories_hub">
-      <img id="category-img" src="./img/Spiritual/spiritual_3.webp" onclick="document.getElementById('Spiritual-3').style.display='block'">
-      <div id="Spiritual-3" class="w3-modal" onclick="this.style.display='none'">
-        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-        <div class="w3-modal-content w3-animate-zoom">
-          <img src="./img/Spiritual/spiritual_3.webp">
-        </div>
-      </div>
-    </div>
-    <div id="categories_hub">
-      <img id="category-img" src="./img/Spiritual/spiritual_4.webp" onclick="document.getElementById('Spiritual-4').style.display='block'">
-      <div id="Spiritual-4" class="w3-modal" onclick="this.style.display='none'">
-        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-        <div class="w3-modal-content w3-animate-zoom">
-          <img src="./img/Spiritual/spiritual_4.webp">
-        </div>
-      </div>
-    </div>
-    <div id="categories_hub">
-      <img id="category-img" src="./img/Spiritual/spiritual_5.webp" onclick="document.getElementById('Spiritual-5').style.display='block'">
-      <div id="Spiritual-5" class="w3-modal" onclick="this.style.display='none'">
-        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-        <div class="w3-modal-content w3-animate-zoom">
-          <img src="./img/Spiritual/spiritual_5.webp">
-        </div>
-      </div>
-    </div>
-    <div id="categories_hub">
-      <img id="category-img" src="./img/Spiritual/spiritual_6.webp" onclick="document.getElementById('Spiritual-6').style.display='block'">
-      <div id="Spiritual-6" class="w3-modal" onclick="this.style.display='none'">
-        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-        <div class="w3-modal-content w3-animate-zoom">
-          <img src="./img/Spiritual/spiritual_6.webp">
-        </div>
-      </div>
-    </div>
-    <div id="categories_hub">
-      <img id="category-img" src="./img/Spiritual/spiritual_7.webp" onclick="document.getElementById('Spiritual-7').style.display='block'">
-      <div id="Spiritual-7" class="w3-modal" onclick="this.style.display='none'">
-        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-        <div class="w3-modal-content w3-animate-zoom">
-          <img src="./img/Spiritual/spiritual_7.webp">
-        </div>
-      </div>
-    </div>
-    <div id="categories_hub">
-      <img id="category-img" src="./img/Spiritual/spiritual_8.webp" onclick="document.getElementById('Spiritual-8').style.display='block'">
-      <div id="Spiritual-8" class="w3-modal" onclick="this.style.display='none'">
-        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-        <div class="w3-modal-content w3-animate-zoom">
-          <img src="./img/Spiritual/spiritual_8.webp">
-        </div>
-      </div>
-    </div>
-    <div id="categories_hub">
-      <img id="category-img" src="./img/Spiritual/spiritual_1.webp" onclick="document.getElementById('Spiritual-1').style.display='block'">
-      <div id="Spiritual-1" class="w3-modal" onclick="this.style.display='none'">
-        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-        <div class="w3-modal-content w3-animate-zoom">
-          <img src="./img/Spiritual/spiritual_1.webp">
-        </div>
-      </div>
-    </div>
-    <div id="categories_hub">
-      <img id="category-img" src="./img/Spiritual/spiritual_10.webp" onclick="document.getElementById('Spiritual-10').style.display='block'">
-      <div id="Spiritual-10" class="w3-modal" onclick="this.style.display='none'">
-        <span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
-        <div class="w3-modal-content w3-animate-zoom">
-          <img src="./img/Spiritual/spiritual_10.webp">
-        </div>
-      </div>
-    </div>
-  
-    </span>
-    </div>
 
-    <div class="filterDiv animals"> 
 
-    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
   
       
   
-  </div>
-</section>
+  
 
       <script src="./javascript/gallery.js"></script>  
       <script src="javascript/script.js"></script>
